@@ -1,0 +1,20 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        int i=0, j;
+        String isPoli = String.valueOf(x);
+        j = isPoli.length()-1;
+        //System.out.println("isPoli : "+isPoli);
+
+        while (i<=j){
+            if (isPoli.charAt(i) == isPoli.charAt(j)){
+                i++;
+                j--;
+            }
+            else{
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
